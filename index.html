@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <script>
+      var counter = 0;
+      var element2 = document.createGetElementById('points'); 
+      function clicker(x) {
+        counter = counter + x
+        element2.innerHTML = "<h1> Points:" + counter + "</h1>";
+      } 
+    </script>
+  </head>
+  <body>
+    <div id="element2"></div>
+    <button onclick="clicker(1)"></button>
+  </body>
+</html>
