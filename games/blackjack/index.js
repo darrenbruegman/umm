@@ -14,7 +14,6 @@ function newGame() {
   dealersum = 0
   sum += randint(1, 11)
   sum += randint(1, 11)
-  topmsg.textContent = "Blackjack";
   playercards.textContent = "You: " + sum;
   dealercards.textContent = "Dealer: " + 0;
 }
@@ -39,15 +38,15 @@ function stand() {
   xrc = setInterval(dealerhit(), 3000);
   clearInterval(xrc)
   if (dealersum == 21) {
-    topmsg.textContent = "The Dealer Has Blackjack!"
+    window.alert("The Dealer Has Blackjack!")
   }
   else if (dealersum >= sum && dealersum <= 21) {
-    topmsg.textContent = "The Dealer Wins!"
+    window.alert("The Dealer Wins!")
   }
   else if (sum == 21 && dealersum != 21) {
-    topmsg.textContent = "You Have Blackjack!"
+    window.alert("You Have Blackjack!")
   }
   else if (sum >= dealersum && sum <= 21) {
-    topmsg.textContent = "You Are Win!!!!!"
+    window.alert("You Are Win!!!!!")
   }
 }
