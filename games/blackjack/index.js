@@ -16,7 +16,7 @@ function newGame() {
   sum += randint(1, 11)
   topmsg.textContent = "Blackjack";
   playercards.textContent = "You: " + sum;
-  dealercards.textContent = "Dealer: " + dealersum;
+  dealercards.textContent = "Dealer: " + 0;
 }
 function hit() {
   sum += randint(1, 11)
