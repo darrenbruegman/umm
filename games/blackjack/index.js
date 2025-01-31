@@ -36,7 +36,7 @@ function stand() {
   dealersum += randint(1,11)
   dealersum += randint(1,11)
   dealercards.textContent = "Dealer: " + dealersum
-  xrc = setInterval(dealerhit(), 1500);
+  xrc = setInterval(dealerhit(), 3000);
   clearInterval(xrc)
   if (dealersum == 21) {
     topmsg.textContent = "The Dealer Has Blackjack!"
