@@ -9,8 +9,8 @@ function randint(min, max) { // min and max included
 
 
 function newGame() {
-  sum =+ randint(1, 10)
-  sum =+ randint(1, 10)
+  sum += randint(1, 10)
+  sum += randint(1, 10)
   playercards.textContent = "You: " + sum;
 }
 function hit() {}
